@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>cetrekan</title>
+	<script src="saklar.js" type="application/javascript"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="flex flex-col justify-center items-center min-h-screen w-full gap-10 bg-gray-500">
+		<div class="flex flex-row gap-5">
+			<!-- lampu1 -->
+			<div class="flex flex-col gap-1 items-center">
+				<img src="off.png" alt="" id="lampu1" width="100" />
+				<label class="relative inline-flex items-center cursor-pointer">
+					<input type="checkbox" class="sr-only peer" onchange="saklar()" id="toggle1">
+					<div
+						class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+					</div>
+				</label>
+			</div>
+
+			<!-- lampu2 -->
+			<div class="flex flex-col gap-1 items-center">
+				<img src="off.png" alt="" id="lampu2" width="100" />
+				<label class="relative inline-flex items-center cursor-pointer">
+					<input type="checkbox" class="sr-only peer" onchange="saklar()" id="toggle2">
+					<div
+						class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+					</div>
+				</label>
+			</div>
+
+			<!-- lampu3 -->
+			<div class="flex flex-col gap-1 items-center">
+				<img src="off.png" alt="" id="lampu3" width="100" />
+				<label class="relative inline-flex items-center cursor-pointer">
+					<input type="checkbox" class="sr-only peer" onchange="saklar()" id="toggle3">
+					<div
+						class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+					</div>
+				</label>
+			</div>
+		</div>
+
+		<div class="flex flex-row gap-5">
+			<!-- lampu 4 -->
+			<div class="flex flex-col gap-0 items-center">
+				<img src="off.png" alt="" id="lampu4" width="100" />
+				<button type="button"
+					class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mb-0 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+					onclick="saklar('on', 4)">On</button>
+				<button type="button"
+					class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mb-0 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+					onclick="saklar('off', 4)">Off</button>
+			</div>
+
+			<!-- lampu5 -->
+			<div class="flex flex-col gap-0 items-center">
+				<img src="off.png" alt="" id="lampu5" width="100" />
+				<button type="button"
+					class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mb-0 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+					onclick="saklar('on', 5)">On</button>
+				<button type="button"
+					class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mb-0 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+					onclick="saklar('off', 5)">Off</button>
+			</div>
+
+			<!-- lampu6 -->
+			<div class="flex flex-col gap-0 items-center">
+				<img src="off.png" alt="" id="lampu6" width="100" />
+				<button type="button"
+					class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mb-0 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+					onclick="saklar('on', 6)">On</button>
+				<button type="button"
+					class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mb-0 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+					onclick="saklar('off', 6)">Off</button>
+			</div>
+		</div>
+
+		<!-- cetrekan -->
+		<div>
+			<label class="relative inline-flex items-center cursor-pointer">
+				<input type="checkbox" class="sr-only peer" onchange="saklar('all', 'all')" id="toggle">
+				<div
+					class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+				</div>
+				<span class="ml-1 text-sm font-medium text-gray-900 dark:text-gray-300">Saklar seri</span>
+			</label>
+		</div>
+
+		<!-- gerbang -->
+		<div class="flex flex-col gap-5 mb-5">
+			<!-- and -->
+			<div class="flex flex-col gap-1 items-center">
+				<img src="off.png" alt="" id="and" width="100" />
+				<div class="flex flex-row gap-2">
+					<label class="relative inline-flex items-center cursor-pointer">
+						<input type="checkbox" class="sr-only peer" onchange="saklar()" id="and1">
+						<div
+							class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+						</div>
+					</label>
+					<b>AND</b>
+					<label class="relative inline-flex items-center cursor-pointer">
+						<input type="checkbox" class="sr-only peer" onchange="saklar()" id="and2">
+						<div
+							class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<!-- or -->
+			<div class="flex flex-col gap-1 items-center">
+				<img src="off.png" alt="" id="or" width="100" />
+				<div class="flex flex-row gap-2">
+					<label class="relative inline-flex items-center cursor-pointer">
+						<input type="checkbox" class="sr-only peer" onchange="saklar()" id="or1">
+						<div
+							class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+						</div>
+					</label>
+					<b>OR</b>
+					<label class="relative inline-flex items-center cursor-pointer">
+						<input type="checkbox" class="sr-only peer" onchange="saklar()" id="or2">
+						<div
+							class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<!-- not -->
+			<div class="flex flex-col gap-1 items-center">
+				<img src="off.png" alt="" id="not" width="100" />
+				<b>NOT</b>
+				<label class="relative inline-flex items-center cursor-pointer">
+					<input type="checkbox" value="" class="sr-only peer" checked onchange="saklar()" id="not1">
+					<div
+						class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+					</div>
+				</label>
+				</label>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
